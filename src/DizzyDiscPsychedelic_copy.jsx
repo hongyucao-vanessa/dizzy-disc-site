@@ -7,7 +7,7 @@ export default function DizzyDiscPsychedelic() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-300 to-indigo-200 text-white antialiased">
       <header className="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-wider text-white drop-shadow-lg">Dizzy Disc 🌈</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-wider text-white drop-shadow-lg">Dizzy Disc</h1>
         <nav className="flex gap-4">
           <a href="#music" className="font-semibold hover:underline">Music</a>
           <a href="#about" className="font-semibold hover:underline">About</a>
@@ -19,8 +19,13 @@ export default function DizzyDiscPsychedelic() {
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <div className="w-full h-64 md:h-80 rounded-xl bg-gradient-to-tr from-yellow-200 via-pink-300 to-purple-400 flex items-center justify-center text-white text-2xl font-bold shadow-lg">Band Photo / Psychedelic Artwork</div>
-            <p className="text-lg drop-shadow-md">Dizzy is a young girl band from Switzerland. Friends first, band members second. They play authentic indie songs and love performing them live, now bringing their music to Spotify.</p>
+              <img 
+  src="/band.jpg" 
+  alt="Dizzy Disc Band" 
+  className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
+/>
+
+            <p className="text-lg drop-shadow-md">Dizzy is a young girl band from Switzerland. They play authentic indie songs and love performing them live, now bringing their music to Spotify.</p>
             <div className="flex gap-3">
               <a href="#music" className="px-4 py-2 rounded-lg bg-white text-purple-700 font-bold hover:bg-yellow-200 transition">Listen on Spotify</a>
               <a href={instagramUrl} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-lg bg-purple-700 font-bold hover:bg-pink-500 transition">Follow on Instagram</a>
